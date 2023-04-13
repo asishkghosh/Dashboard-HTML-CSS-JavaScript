@@ -44,44 +44,96 @@
 
             <ul class="sidebar-list">
                 <li class="sidebar-list-item">
-                        <span class="material-icons-outlined">dashboard</span>
-                        <span>Dashboard</span>
+                    <span class="material-icons-outlined">dashboard</span>
+                    <span>Dashboard</span>
                 </li>
                 <li class="sidebar-list-item">
-                        <span class="material-icons-outlined">inventory_2</span>
-                        <span>Products</span>
+                    <span class="material-icons-outlined">inventory_2</span>
+                    <span>Products</span>
                 </li>
                 <li class="sidebar-list-item">
-                        <span class="material-icons-outlined">fact_check</span>
-                        <span>Inventory</span>
+                    <span class="material-icons-outlined">fact_check</span>
+                    <span>Inventory</span>
                 </li>
                 <li class="sidebar-list-item">
-                        <span class="material-icons-outlined">add_shopping_cart</span>
-                        <span>Purchase Orders</span>
+                    <span class="material-icons-outlined">add_shopping_cart</span>
+                    <span>Purchase Orders</span>
                 </li>
                 <li class="sidebar-list-item">
-                        <span class="material-icons-outlined">shopping_cart</span>
-                        <span>Sales Orders</span>
+                    <span class="material-icons-outlined">shopping_cart</span>
+                    <span>Sales Orders</span>
                 </li>
                 <li class="sidebar-list-item">
-                        <span class="material-icons-outlined">poll</span>
-                        <span>Reports</span>
+                    <span class="material-icons-outlined">poll</span>
+                    <span>Reports</span>
                 </li>
                 <li class="sidebar-list-item">
-                        <span class="material-icons-outlined">settings</span>
-                        <span>Settings</span>
+                    <span class="material-icons-outlined">settings</span>
+                    <span>Settings</span>
                 </li>
             </ul>
 
         </aside>
 
         <!-- main -->
-        <main class="main-container"></main>
+        <main class="main-container">
 
+            <div class="main-title">
+                <p class="font-weight-bold">DASHBOARD</p>
+            </div>
 
+            <div class="main-cards">
+                <div class="card">
+                    <div class="card-inner">
+                        <p class="text-primary">PRODUCTS</p>
+                        <span class="material-icons-outlined text-blue">inventory_2</span>
+                    </div>
+                    <span class="text-primary text-weight-bold">204</span>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <p class="text-primary">PURCHASE ORDER</p>
+                        <span class="material-icons-outlined text-orange">add_shopping_cart</span>
+                    </div>
+                    <span class="text-primary text-weight-bold">78</span>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <p class="text-primary">SALES ORDERS</p>
+                        <span class="material-icons-outlined text-green">shopping_cart</span>
+                    </div>
+                    <span class="text-primary text-weight-bold">254</span>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <p class="text-primary">INVENTORY ALERTS</p>
+                        <span class="material-icons-outlined text-red">notification_important</span>
+                    </div>
+                    <span class="text-primary text-weight-bold">20</span>
+                </div>
+            </div>
+
+            <div class="charts">
+                <div class="charts-card">
+                    <p class="chart-title font-weight-bold">TOP PRODUCTS</p>
+                    <div id="bar-chart"></div>
+                </div>
+
+                <div class="charts-card">
+                    <p class="chart-title font-weight-bold">PURCHASE AND SALES ORDERS</p>
+                    <div id="area-chart"></div>
+                </div>
+            </div>
+
+        </main>
 
     </div>
 
+    <!---- Apex Charts -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <!-- Custom JS -->
     <script src="js/scripts.js"></script>
 </body>
