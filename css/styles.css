@@ -1,0 +1,22 @@
+body {}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.header {
+  grid-column: 1 / 4;
+  grid-row: 1 / 2;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+#sidebar {
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+    background-color: rgba(255, 255, 255, 0.8);
+}
